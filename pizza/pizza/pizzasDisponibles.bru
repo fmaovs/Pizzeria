@@ -1,0 +1,15 @@
+meta {
+  name: pizzasDisponibles
+  type: http
+  seq: 6
+}
+
+get {
+  url: http://localhost:8080/api/pizzas/available?sortDirection=DESC
+  body: none
+  auth: none
+}
+
+params:query {
+  sortDirection: DESC
+}

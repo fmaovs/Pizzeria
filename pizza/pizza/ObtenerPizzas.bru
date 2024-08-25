@@ -1,0 +1,16 @@
+meta {
+  name: ObtenerPizzas
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8080/api/pizzas?page=0&elements=15
+  body: none
+  auth: none
+}
+
+params:query {
+  page: 0
+  elements: 15
+}
